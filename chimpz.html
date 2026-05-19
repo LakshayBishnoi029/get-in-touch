@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .list-items {
+        font-family: "Exo 2", sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 46px;
+
+    }
+
+
+    .main {
+        background: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
+        width: 100%;
+
+        background-image: url(./assets/bg.png);
+        min-height: 810px;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .svg {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .para {
+        font-family: "Exo 2", sans-serif;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 117%;
+        text-shadow: 2px 2px 4px white;
+        padding-bottom: 16px;
+
+    }
+
+    .heading {
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        max-width: 647px;
+
+    }
+
+    .paragraph {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        font-size: 16px;
+        text-shadow: 2px 2px 4px white;
+        color: white;
+        opacity: 90%;
+    }
+
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .content {
+        margin-top: 97px;
+        backdrop-filter: blur(6px);
+
+        max-width: 647px;
+        color: white;
+
+        padding: 17px;
+    }
+
+    .chim {
+        color: #3B945E;
+        text-shadow: 2px 2px 4px green;
+
+    }
+
+    .nav {
+        min-height: 100px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .clr {
+        color: #BABABA;
+        font-family: "Fira Sans", sans-serif;
+    }
+
+    .clr:hover {
+        color: white;
+    }
+
+    .clrs {
+        /* color: #FFFFFF; */
+        color: #BABABA;
+        font-family: "Fira Sans", sans-serif;
+    }
+
+    .left-side-content {
+
+        align-items: start;
+        justify-content: center;
+    }
+
+    @media (min-width:1350px) {
+
+        .hero {
+            position: absolute;
+            top: 36px;
+            right: 49px;
+        }
+    }
+
+    .logo {
+        display: inline;
+        padding-top: 29px;
+    }
+
+    .Now {
+        background-color: #FFC20A;
+        width: 144px;
+        min-height: 51px;
+        border-radius: 36px;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+        border: transparent;
+        font-family: "Dela Gothic One", sans-serif;
+
+    }
+
+    .nav-bg-gradient {
+        background: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
+        position: absolute;
+        top: 0;
+        height: 100px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .social-icon {
+        display: flex;
+        gap: 8px;
+        padding-left: 28px;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .bottem {
+        background: linear-gradient(180deg, #030D01 0%, rgba(3, 13, 1, 0) 100%);
+        bottom: 0;
+        width: 100%;
+        rotate: 180deg;
+
+    }
+
+    .Now:hover {
+        background-color: white;
+        color:yellow;
+    }
+
+    .clrs:hover {
+        color: white;
+    }
+    .image{
+        transition:  all 300ms linear;
+    }
+    .image:hover{
+        transform: translateY(-6px);
+    }
+
+    @media (max-width:1024px) {
+        .menu-line {
+            width: 30px;
+            height: 2px;
+            background-color: white;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+
+
+        .flex {
+            position: fixed;
+            flex-direction: column;
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            right: -100%;
+            align-items: center;
+            justify-content: center;
+            transition: all 300ms linear;
+            z-index: 9;
+        }
+
+        input:checked~.flex {
+            right: 0;
+        }
+
+        .list-items {
+            flex-direction: column;
+        }
+        .para{
+            font-size: 28px;
+        }
+        #menu-icon{
+            cursor: pointer;
+        }
+
+        @media (max-width:550px) {
+            .hero {
+                height: 356px;
+                width: 431px;
+            }
+        }
+    }
+
+</style>
+
+<body>
+    <section>
+        <div class="main">
+            <div class="nav-bg-gradient"></div>
+            <div class="container">
+
+                <div class="nav">
+                    <a href=""><img src="./assets/LOGO (7) 1.svg" alt="logo"></a>
+
+                    <input id="menu-icon" type="checkbox" hidden>
+                    <label for="menu-icon">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </label>
+                    <div class="flex">
+
+                        <ul class="list-items">
+                            <li> <a class="clrs" href="">Home</a></li>
+                            <li><a class="clr" href="">About</a></li>
+                            <li><a class="clr" href="">How to Buy</a></li>
+                            <li><a class="clr" href="">Tokenomics</a></li>
+                            <li><a class="clr">Roadmap</a> </li>
+                        </ul>
+                        <div class="social-icon">
+                            <a target="_blank" href="https://discord.com/"><img class="image" src="assets/discord.svg"
+                                    alt="discord"></a>
+                            <a target="_blank" href="https://web.telegram.org/"> <img class="image" src="assets/telegram.svg"
+                                    alt="telegram"></a>
+                            <a target="_blank" href="https://x.com/"><img class="image" src="assets/twitter.svg" alt="twitter"></a>
+                        </div>
+                        <button class="Now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="left-side-content">
+                    <div class="content">
+                        <div class="">
+
+                            <h3 class="heading">
+                                APE TOGETHER STRONG</h3>
+
+                            <p class="para"> <span class="chim">CHIMPZ</span> A Green Revolution for Your Wallet</p>
+                            <p class="paragraph"> Dedicated to all the chimps around the world, we have created a safe
+                                haven for all
+                                the risk-takers and degenerates who have their helmets ready for the next moon landing.
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hero">
+                        <img class="hero" width="585" height="540" src="./assets/hero.png" alt="hero">
+                    </div>
+                </div>
+            </div>
+            <div class="bottem"></div>
+        </div>
+    </section>
+</body>
+
+</html>

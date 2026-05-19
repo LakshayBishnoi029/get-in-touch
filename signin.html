@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    * {
+        margin: 0 auto;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .main {
+        background-image: url(./assets/backgroun.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .heading {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 135%;
+        margin: 10px;
+    }
+
+    .para {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin: 32px;
+        font-family: "Lato", sans-serif;
+        font-weight: 400; 
+        font-size: 14px; 
+        line-height: 150%; 
+
+
+    }
+
+    .box {
+        width: 340px;
+        height: 44px;
+        gap: 10px;
+        opacity: 1;
+        border-radius: 6px;
+        border-width: 1px;
+        padding-top: 10px;
+        padding-right: 16px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        outline: none;
+        border: none;
+        border: transparent;
+
+    }
+
+    .left-side { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%; 
+
+    }
+
+    .btn {
+        width: 340px;
+        height: 48px;
+        width: 340;
+        top: 446px;
+        left: 190px;
+        opacity: 1;
+        gap: 10px;
+        border-radius: 50px;
+        padding-top: 14px;
+        padding-right: 32px;
+        padding-bottom: 14px;
+        padding-left: 32px;
+        background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+        border: none;
+        cursor: pointer;
+        color: white;
+        margin-top: 32px;
+
+    }
+
+    .line {
+        max-width: 340px;
+        height: 1px;
+        border-color: grey;
+    }
+
+    .line {
+        max-width: 340px;
+        height: .5px;
+        color: #62656D;
+    }
+
+    .input-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+        height: 44px;
+        gap: 10px;
+        opacity: 1;
+        border-radius: 6px;
+        border-width: 1px;
+        padding-top: 10px;
+        padding-right: 16px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        /* background-color: white; */
+        border: 1px solid #E4EAF7;
+        background-color: #F5F8FF;
+    }
+
+    .input-boxes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Register {
+        color: #2563EB;
+    }
+
+    .info {
+        justify-content: space-between;
+        display: flex;
+        margin-top: 12px;
+    }
+
+    .line {
+        border-bottom: .111px solid #C9CEDB;
+        margin-top: 30px;
+        width: 100%;
+        /* position: relative; */
+    }
+
+    .absolute {
+        color: #9197A6;
+        background-color: white;
+        position: absolute;
+        top: 594px;
+        right: 1018px;
+    }
+    .box{
+        max-width: 110px;
+        width: 100%;
+        height: 20px;
+        border: 1px solid #E4EAF7;
+    }
+    .boxes-parent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+    .right-side{ 
+        position: relative;
+        width: 50%;
+        background-image:  url(./assets/right-side.png);
+        width: 600px;
+        min-height: 810px; 
+    }
+    .circle{ 
+         width: 499px;
+    height: 499px;
+     padding-right: 70px;
+    margin-top: 136px;
+    margin-right: 45px; 
+    }
+    .group{ 
+            position: absolute;
+    max-width: 350px;
+    height: 297px;
+    top: 245px;
+    right: 157px;
+    }
+    .union{
+          position: absolute;
+    width: 214.70849609375px;
+    height: 331.2671203613281px;
+    top: 239.41px;
+    left: 144px;
+    }
+
+    .parent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+         .svg{
+        /* position: absolute;  */
+        position: top right;
+    }
+    </style>
+
+<body>
+    <div class="main">
+        <div class="container">
+             <div class="parent">
+            <div class="left-side">
+                <div> 
+                    <img src="./assets/postalott.svg" alt="logo">
+                <h2 class="heading">
+                    Sign in </h2>
+                <p class="para">Don't have an account? <a class="Register" href="">Register here</a></p>
+
+                <form action="">
+                    <div class="input-box">
+                        <img src="./assets/mail.svg" alt="mail">
+                        <input class="input-box" required class="box" type="email" placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <img width="18" height="18" src="./assets/locked.png" alt="lock">
+                        <input class="input-box" required width="340" height="340" class="box" type="password"
+                            placeholder="Password">
+                    </div>
+                    <div class="info">
+                        <input required type="checkbox">
+                        <a href=""> Remember me</a>
+                        <a href="">Forgot password?</a>
+                    </div>
+                    <button class="btn">Sign in</button>
+
+                </form>
+                <div class="line"></div>
+                <h3 class="absolute">or continue with</h3>
+                <div class="boxes-parent">
+                <div class="box"> <img src="./assets/google.svg" alt="Google"> <a href="">Google</a></div>
+                   <div class="box"> <img src="./assets/facebook.svg" alt="Facebook"> <a href="">Facebook</a></div></div>
+             </div></div>
+            <div class="right-side">
+                <img class="circle"  " src="./assets/circle.png" alt="circle">
+                <img class="group" class="four-boxes" src="./assets/4box.png" alt="4box">
+                <img class="union" src="./assets/Union.png" alt="" >
+                <img width="64" height="64"  src="./assets/facebooksignin.svg" alt="facebook">
+                 <img width="64" height="64"  class="svg" src="./assets/linksignin.svg" alt="linkedin">
+                 <img width="64" height="64"  class="svg" src="./assets/instasignin.svg" alt="instagram"> 
+                 <img width="64" height="64"  class="svg" src="./assets/twittersignin.svg" alt="twitter">
+                    
+
+
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+
+</html>
