@@ -44,9 +44,9 @@
         line-height: 150%;
         margin: 32px;
         font-family: "Lato", sans-serif;
-        font-weight: 400; 
-        font-size: 14px; 
-        line-height: 150%; 
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
 
 
     }
@@ -68,11 +68,11 @@
 
     }
 
-    .left-side { 
+    .left-side {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50%; 
+        width: 50%;
 
     }
 
@@ -158,107 +158,117 @@
         top: 594px;
         right: 1018px;
     }
-    .box{
+
+    .box {
         max-width: 110px;
         width: 100%;
         height: 20px;
         border: 1px solid #E4EAF7;
     }
-    .boxes-parent{
+
+    .boxes-parent {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 20px;
 
     }
-    .right-side{ 
+
+    .right-side {
         position: relative;
         width: 50%;
-        background-image:  url(./assets/right-side.png);
+        background-image: url(./assets/right-side.png);
         width: 600px;
-        min-height: 810px; 
-    }
-    .circle{ 
-         width: 499px;
-    height: 499px;
-     padding-right: 70px;
-    margin-top: 136px;
-    margin-right: 45px; 
-    }
-    .group{ 
-            position: absolute;
-    max-width: 350px;
-    height: 297px;
-    top: 245px;
-    right: 157px;
-    }
-    .union{
-          position: absolute;
-    width: 214.70849609375px;
-    height: 331.2671203613281px;
-    top: 239.41px;
-    left: 144px;
+        min-height: 810px;
     }
 
-    .parent{
+    .circle {
+        width: 499px;
+        height: 499px;
+        padding-right: 70px;
+        margin-top: 136px;
+        margin-right: 45px;
+    }
+
+    .group {
+        position: absolute;
+        max-width: 350px;
+        height: 297px;
+        top: 245px;
+        right: 157px;
+    }
+
+    .union {
+        position: absolute;
+        width: 214.70849609375px;
+        height: 331.2671203613281px;
+        top: 239.41px;
+        left: 144px;
+    }
+
+    .parent {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-         .svg{
+
+    .svg {
         /* position: absolute;  */
         position: top right;
     }
-    </style>
+</style>
 
 <body>
     <div class="main">
         <div class="container">
-             <div class="parent">
-            <div class="left-side">
-                <div> 
-                    <img src="./assets/postalott.svg" alt="logo">
-                <h2 class="heading">
-                    Sign in </h2>
-                <p class="para">Don't have an account? <a class="Register" href="">Register here</a></p>
+            <div class="parent">
+                <div class="left-side">
+                    <div>
+                        <img src="./assets/postalott.svg" alt="logo">
+                        <h2 class="heading">
+                            Sign in </h2>
+                        <p class="para">Don't have an account? <a class="Register" href="">Register here</a></p>
 
-                <form action="">
-                    <div class="input-box">
-                        <img src="./assets/mail.svg" alt="mail">
-                        <input class="input-box" required class="box" type="email" placeholder="Email">
+                        <form action="">
+                            <div class="input-box">
+                                <img src="./assets/mail.svg" alt="mail">
+                                <input class="input-box" required class="box" type="email" placeholder="Email">
+                            </div>
+                            <div class="input-box">
+                                <img width="18" height="18" src="./assets/locked.png" alt="lock">
+                                <input class="input-box" required width="340" height="340" class="box" type="password"
+                                    placeholder="Password">
+                            </div>
+                            <div class="info">
+                                <input required type="checkbox">
+                                <a href=""> Remember me</a>
+                                <a href="">Forgot password?</a>
+                            </div>
+                            <button class="btn">Sign in</button>
+
+                        </form>
+                        <div class="line"></div>
+                        <h3 class="absolute">or continue with</h3>
+                        <div class="boxes-parent">
+                            <div class="box"> <img src="./assets/google.svg" alt="Google"> <a href="">Google</a></div>
+                            <div class="box"> <img src="./assets/facebook.svg" alt="Facebook"> <a href="">Facebook</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-box">
-                        <img width="18" height="18" src="./assets/locked.png" alt="lock">
-                        <input class="input-box" required width="340" height="340" class="box" type="password"
-                            placeholder="Password">
-                    </div>
-                    <div class="info">
-                        <input required type="checkbox">
-                        <a href=""> Remember me</a>
-                        <a href="">Forgot password?</a>
-                    </div>
-                    <button class="btn">Sign in</button>
-
-                </form>
-                <div class="line"></div>
-                <h3 class="absolute">or continue with</h3>
-                <div class="boxes-parent">
-                <div class="box"> <img src="./assets/google.svg" alt="Google"> <a href="">Google</a></div>
-                   <div class="box"> <img src="./assets/facebook.svg" alt="Facebook"> <a href="">Facebook</a></div></div>
-             </div></div>
-            <div class="right-side">
-                <img class="circle"  " src="./assets/circle.png" alt="circle">
-                <img class="group" class="four-boxes" src="./assets/4box.png" alt="4box">
-                <img class="union" src="./assets/Union.png" alt="" >
-                <img width="64" height="64"  src="./assets/facebooksignin.svg" alt="facebook">
-                 <img width="64" height="64"  class="svg" src="./assets/linksignin.svg" alt="linkedin">
-                 <img width="64" height="64"  class="svg" src="./assets/instasignin.svg" alt="instagram"> 
-                 <img width="64" height="64"  class="svg" src="./assets/twittersignin.svg" alt="twitter">
-                    
+                </div>
+                <div class="right-side">
+                    <img class="circle" " src=" ./assets/circle.png" alt="circle">
+                    <img class="group" class="four-boxes" src="./assets/4box.png" alt="4box">
+                    <img class="union" src="./assets/Union.png" alt="">
+                    <img width="64" height="64" src="./assets/facebooksignin.svg" alt="facebook">
+                    <img width="64" height="64" class="svg" src="./assets/linksignin.svg" alt="linkedin">
+                    <img width="64" height="64" class="svg" src="./assets/instasignin.svg" alt="instagram">
+                    <img width="64" height="64" class="svg" src="./assets/twittersignin.svg" alt="twitter">
 
 
+
+                </div>
             </div>
-          </div>
         </div>
     </div>
 </body>
